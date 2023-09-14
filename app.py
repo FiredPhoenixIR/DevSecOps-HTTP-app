@@ -11,6 +11,7 @@ csp = {
 # talisman = Talisman(app, content_security_policy=csp)
 
 # Enable Cross Origin Resource Sourcing (CORS) policies
+# Change Origin to allow only specified URL
 CORS(app, resources={"/*": {"origins": "http://localhost:3000"}})
 
 
